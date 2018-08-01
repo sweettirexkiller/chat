@@ -1,4 +1,9 @@
 import React, { Component } from "react";
+
+import { Sidebar } from "./containers/Sidebar";
+import { MessegesList } from "./containers/MessegesList";
+import { AddMessage } from "./containers/AddMessage";
+
 import "./App.css";
 
 class App extends Component {
@@ -7,8 +12,8 @@ class App extends Component {
       <div id="container">
         <aside id="sidebar">Users</aside>
         <section id="main">
-          <section id="messages-list">Messeges List</section>
-          <section id="new-message" >New Message</section>
+          <MessegesList />
+          <AddMessage/>
         </section>
       </div>
     );
